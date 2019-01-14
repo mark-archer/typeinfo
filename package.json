@@ -1,0 +1,38 @@
+{
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/chai-as-promised": "^7.1.0",
+    "@types/jest": "^23.3.1",
+    "@types/lodash": "^4.14.116",
+    "@types/node": "^10.5.7",
+    "@types/should": "^13.0.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "jest": "^23.6.0",
+    "lodash": "^4.17.11",
+    "should": "^13.2.3",
+    "ts-jest": "^23.10.3",
+    "typescript": "^3.1.1"
+  },
+  "name": "typeinfo",
+  "description": "runtime type system",
+  "version": "1.0.0",
+  "main": "src/typeinfo",
+  "dependencies": {
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mark-archer/typeinfo.git"
+  },
+  "author": "Mark Archer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mark-archer/typeinfo/issues"
+  },
+  "homepage": "https://github.com/mark-archer/typeinfo#readme"
+}
