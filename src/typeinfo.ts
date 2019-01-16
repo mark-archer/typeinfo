@@ -1,4 +1,7 @@
 import { isNumber } from "util";
+import { v4 } from 'uuid';
+
+export const newid = v4().replace(/-/g, '');
 
 //import { stringify, copy } from "./utils";
 
@@ -8,13 +11,13 @@ import { isNumber } from "util";
 // export type ParseFnType = (x:string) => any;
 // export type CastFnType = (x:any) => any;
 
-// export type TypeInfo = {
-//   id?:string
-//   name?:string
-//   validate?:ValidateFnType
-//   match?:MatchFnType
-//   stringify?:StringifyFnType
-// }
+export type TypeInfo = {
+  id:string
+  name?:string
+  // validate?:ValidateFnType
+  // match?:MatchFnType
+  // stringify?:StringifyFnType
+}
 
 // export function valueType() {
 //   return {
@@ -31,4 +34,10 @@ export const Num = {
   },
   cast: (x:any) => Number(x),
   match: isNumber
+}
+
+export function typeInfo(): TypeInfo {
+  return {
+    id: newid
+  }
 }

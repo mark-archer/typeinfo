@@ -1,8 +1,13 @@
-import { Num } from '../src/typeinfo'
+import { Num, typeInfo } from '../src/typeinfo'
 
 var should = require('should');
 
 describe('typeinfo', () => {
+
+  it('should allow creating a new type', () => {
+      const t = typeInfo();
+      t.id.length.should.equal(32);
+  })
 
   describe('Num', () => {
 
